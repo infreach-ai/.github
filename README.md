@@ -1,5 +1,17 @@
 # .github
 
+```
+	cp -f stf/.env.example stf/.env
+```
+
+Указать PUBLIC_IP=Свой локальный сетевой адрес в файле stf/.env
+
+Выполнить комаду
+
+```
+make dev-up
+```
+
 ![Снимок экрана 2025-06-06 в 11 56 25](https://github.com/user-attachments/assets/dc02a558-9094-4c33-8c85-361113f86efd)
 
 ![Снимок экрана 2025-06-06 в 11 58 20](https://github.com/user-attachments/assets/2733f05a-085f-4737-a5eb-7236862a1f73)
