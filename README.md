@@ -1,7 +1,9 @@
-# .github
+# Развертывание сервиса на локальной машине разработчика
+
+## infrastructure
 
 ```
-	cp -f stf/.env.example stf/.env
+cp -f stf/.env.example stf/.env
 ```
 
 Указать PUBLIC_IP=Свой локальный сетевой адрес в файле stf/.env
@@ -25,4 +27,20 @@ make dev-up
 ![Снимок экрана 2025-06-06 в 12 02 12](https://github.com/user-attachments/assets/dd5881f6-7a0a-4c8a-80ee-1c9cb3d53772)
 
 ![Снимок экрана 2025-06-06 в 12 02 59](https://github.com/user-attachments/assets/647c5dbc-5091-48bb-938a-b8a395cf967e)
+
+## android-worker
+
+```
+cp example.env .env
+```
+
+Заменить ip на свой локальный сетевой адрес
+SUPABASE_HOST="http://192.168.0.170:8000"
+STF_HOST="http://192.168.0.170:7100"
+
+Заменить на токен созданный в STF
+
+STF_TOKEN="33a874f3cfa947c7b8cba86c60226934eafe7884410d46c4add6b822d73321e3"
+
+make dev-up
 
